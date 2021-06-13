@@ -14,4 +14,7 @@ Route::group([
     ),
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
+    Route::crud('gametable', 'GameTableCrudController');
+    Route::crud('timeslot', 'TimeslotCrudController');
+    Route::crud('system', 'SystemCrudController');
 }); // this should be the absolute last line of this file
